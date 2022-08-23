@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    
+    <title>Document</title>
+
+</head>
+
+<style>
+  *{
+   padding: 0%;
+   margin: 0%;
+  }  
+</style>
+<body class="bg-dark">
+  
+      <div class="container">
+        <div class="text-center my-5">
+          <h1 class="text-light">I'm Fatir Saeed</h1>
+          <h2 class="text-light">Bootstrap 5 - Blog Posts with add comments funtionality at the bottom of the same page</h2>
+          <hr />
+        </div>
+  
+        <div class="row">
+          <div class="row-cols-auto  align-content-center" id="image" >
+            <div class="card mb-12 shadow-sm">
+              <img src="imgs/fatir.jpg" class="img-fluid img-thumbnail " height="25rem" />
+  
+              <div class="card-body">
+                <div class="card-title">
+                  <h2>What is the meaning of Fatir ?</h2>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Fatir is baby boy name mainly popular in Muslim religion and its main origin is Arabic. Fatir name meanings is Maker, Creator. Fatir is written in Arabic as فاطر.Fatir has the numerology 7. They try and analyze as many things as possible and not just that but they also believe in spreading awareness about everything that they know. The meaning of this name is Maker, Creator. They do not believe in keeping knowledge to themselves but spreading it.
+
+                    People with numerology number 7 are more on the studious and knowledgeable side because they believe in studying everything that is present on this planet. The gender of this name Fatir is Boy.
+                    
+                    They are also the ones believing in meditation because they want peace all around them and these people are also very understanding of the situations around them. They do not make a fuss out of any situation rather they try to solve it as much as possible.
+                  </p>
+                </div>
+                <a href="https://www.kidpaw.com/names/fatir#:~:text=In%20Muslim%20the%20meaning%20of,Creator." class="btn btn-outline-primary rounded-0 float-end"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          
+      <div class="container">
+
+      <form  name="myform">
+        <h3 class="text-light">Add Comment</h3>
+          <div class="mb-3">
+            <input name="name" placeholder="Name" type="text" class="form-control" id="username" >
+            
+          </div>
+          <div class="mb-3">
+            
+            <input type="text" placeholder="Comment" class="form-control" id="comment">
+          </div>
+          
+          <button type="submit" class="btn btn-outline-primary rounded-0 " onclick="check(); return false">Submit</button>
+        </form>
+        <br>
+        <div class="card-body col-lg-4 col-md-6 col-sm-12 card mb-5 shadow-sm">
+        <p id="f1" ></p>
+        <p id="f2" ></p>
+      </div>
+      <script>
+        function check(){
+            document.getElementById("f1").innerHTML=document.myform.username.value
+            document.getElementById("f2").innerHTML=document.myform.comment.value
+        }
+       </script>
+    </div>
+    </body>
